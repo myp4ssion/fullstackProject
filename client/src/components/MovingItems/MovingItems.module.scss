@@ -1,0 +1,102 @@
+.animateDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: white solid 2px;
+  border-bottom: white solid 2px;
+  user-select: none;
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 80px;
+    white-space: nowrap;
+    padding: 0px 20px;
+    @media (max-width: 980px) {
+      font-size: 63px;
+    }
+    @media (max-width: 420px) {
+      font-size: 42px;
+    }
+  }
+}
+
+.rotateWrapperRight {
+  position: relative;
+  top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transform: rotate(5deg);
+  transform-origin: 10%;
+}
+
+.rotateWrapperLeft {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transform: rotate(-5deg);
+  transform-origin: right;
+  background-color: #1223b9;
+}
+
+.rotateWrapperRight .animateDiv {
+  animation: animRight 12s linear infinite;
+}
+
+.rotateWrapperLeft .animateDiv {
+  background-color: #1223b9;
+  animation: animLeft 10s linear infinite;
+}
+
+@keyframes animLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes animRight {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.firstStar {
+  path {
+    stroke: #d9bbff;
+  }
+  width: 45px;
+  height: 45px;
+  @media (max-width: 980px) {
+    width: 35px;
+    height: 35px;
+  }
+  @media (max-width: 420px) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.secondStar {
+  path {
+    stroke: #ffc87c;
+  }
+  width: 45px;
+  height: 45px;
+  @media (max-width: 980px) {
+    width: 35px;
+    height: 35px;
+  }
+  @media (max-width: 420px) {
+    width: 23px;
+    height: 23px;
+  }
+}

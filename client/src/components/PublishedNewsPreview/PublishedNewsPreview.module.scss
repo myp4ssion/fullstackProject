@@ -1,0 +1,39 @@
+.newsPreviewContainer {
+  padding: 30px 10px;
+  border-top: 1px solid #c1c1c1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.newsPreviewContainer:hover {
+  background-color: #f3f3f3;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.newsTitle {
+  font-size: 24px;
+}
+
+.newsDescription {
+  font-size: 20px;
+}
+
+.trashSvg {
+  width: 61px;
+  height: 61px;
+  flex-shrink: 0;
+  transition: transform 0.1s ease-in-out;
+}
+
+.trashSvg:hover {
+  transform: scale(1.2);
+}

@@ -1,0 +1,43 @@
+.main {
+  max-width: 1720px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.authForm {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 864px;
+  padding: 50px;
+  background-color: #1223b9;
+  border-radius: 12px;
+  gap: 20px;
+  align-items: center;
+}
+
+.formInput {
+  padding: 20px;
+  width: 100%;
+  outline: none;
+  outline-offset: none;
+  border-radius: 8px;
+  border: none;
+  font-size: 24px;
+}
+
+.formInput:focus {
+  outline: 2px #979797 solid;
+}
+
+.formButton {
+  padding: 10px 50px;
+  border-radius: 86px;
+  border: none;
+  cursor: pointer;
+  outline: 2px #fff solid;
+  background-color: #1223b9;
+  color: #fff;
+  font-size: 24px;
+}

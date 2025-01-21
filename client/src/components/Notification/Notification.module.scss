@@ -1,0 +1,65 @@
+.notification {
+  margin: 0 auto;
+  box-shadow: 1px 1px 15px 0px #0000004d;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: translateDown 4s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+  background-color: #fff;
+  min-height: 130px;
+
+  @keyframes translateDown {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    25% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    75% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+  }
+
+  span {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.success {
+  h2 {
+    color: #1223b9;
+  }
+}
+
+.error {
+  h2 {
+    color: #d21717;
+  }
+}
+
+.warn {
+  h2 {
+    color: #ff9340;
+  }
+}
+
+.svg {
+  position: absolute;
+  top: 0;
+  width: 130px;
+  height: 130px;
+}

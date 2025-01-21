@@ -1,0 +1,74 @@
+.bottomContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  // flex: 1;
+  margin-top: auto;
+  max-width: 1360px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 60px;
+
+  @media (max-width: 800px) {
+    gap: 60px;
+  }
+
+  div:first-child {
+    @media (max-width: 800px) {
+      order: 2;
+    }
+  }
+
+  div:last-child {
+    @media (max-width: 800px) {
+      order: 1;
+    }
+  }
+
+  div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: 20px;
+      line-height: 22px;
+      color: #fff;
+      text-align: justify;
+    }
+
+    .arrowElipse {
+      $size: 70px;
+      width: $size;
+      height: $size;
+
+      path {
+        // transform: translateY(calc($size / 3));
+        animation: moveArrow ease-in-out 3s infinite;
+
+        @keyframes moveArrow {
+          0% {
+            transform: translateY(calc(-1 * $size/4));
+          }
+          50% {
+            transform: translateY(calc($size/4));
+          }
+          100% {
+            transform: translateY(calc(-1 * $size/4));
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1360px) {
+    margin: 0 30px;
+    width: auto;
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}

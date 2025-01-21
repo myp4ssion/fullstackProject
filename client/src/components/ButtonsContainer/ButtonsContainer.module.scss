@@ -1,0 +1,40 @@
+.buttonsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  background-color: #1223b9;
+  border: none;
+  outline: 2px solid #1223b9;
+  font-size: 24px;
+  padding: 23px 52px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.button:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+.logOutButton {
+  background-color: #1223b9;
+  border: none;
+  outline: 2px solid #1223b9;
+  font-size: 18px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.logOutButton:hover {
+  background-color: #fff;
+  color: #1223b9;
+}

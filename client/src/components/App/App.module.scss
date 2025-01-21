@@ -1,0 +1,36 @@
+.button {
+  background-color: brown;
+}
+
+.notificationContainer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.navContainer {
+  display: block;
+  @media (max-width: 980px) {
+    display: none;
+  }
+}
+
+.navMobileContainer {
+  display: none;
+  @media (max-width: 980px) {
+    display: block;
+  }
+}
+
+.movingContainer {
+  margin-top: 40px;
+}
+
+.hiddenDiv {
+  height: 0;
+}

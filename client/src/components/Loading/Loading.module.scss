@@ -1,0 +1,87 @@
+.loadingContainer {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elementsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 30px;
+}
+
+.elem1 {
+  color: #1223b9;
+  animation: elemAnim1 1s infinite ease-in-out forwards;
+}
+
+.elem2 {
+  color: #1223b9;
+  animation: elemAnim2 1s infinite ease-in-out forwards;
+}
+
+.elem3 {
+  color: #1223b9;
+  animation: elemAnim3 1s infinite ease-in-out forwards;
+}
+
+.text {
+  font-size: 30px;
+  color: #1223b9;
+  user-select: none;
+}
+
+@keyframes elemAnim1 {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-1px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes elemAnim2 {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(-2px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes elemAnim3 {
+  0% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+
+  60% {
+    transform: translateY(-3px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

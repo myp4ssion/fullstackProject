@@ -1,0 +1,31 @@
+.navBarBurgerContainer {
+}
+
+.navContainerTop {
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1223b9;
+}
+
+.positionFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #1223b9;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.modalContainer {
+  width: 100vw;
+  height: 100vh;
+}

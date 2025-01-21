@@ -1,0 +1,276 @@
+.modalOfferNewsContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(70, 70, 70, 0.7);
+  animation: opacityAnim 0.2s ease-in-out;
+}
+
+@keyframes opacityAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.modalInfoContainer {
+  max-width: 1360px;
+  flex-basis: 1360px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  gap: 10px;
+  animation: resizeAnim 0.2s ease-in-out;
+}
+
+@keyframes resizeAnim {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.topContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.modalTitle {
+  font-size: 24px;
+  color: #1223b9;
+}
+
+.datesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-end;
+}
+
+.defaultText {
+  font-size: 20px;
+  color: #979797;
+}
+
+.midleContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.inputModal {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 30px 40px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: none;
+  outline: 1px solid #c1c1c1;
+}
+
+.textareaModal {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 30px 40px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: none;
+  outline: 1px solid #c1c1c1;
+  resize: none;
+  height: 250px;
+  overflow-y: scroll;
+}
+
+.filesContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+.sendButton {
+  font-size: 24px;
+  padding: 18px 30px;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  color: #1223b9;
+  outline: 3px solid #1223b9;
+  border-radius: 86px;
+  transition: 0.1s ease-in-out;
+}
+
+.sendButton:hover {
+  background-color: #1223b9;
+  color: #fff;
+}
+
+.deleteButton {
+  font-size: 24px;
+  padding: 18px 30px;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  color: #d21717;
+  outline: 3px solid #d21717;
+  border-radius: 86px;
+}
+
+.deleteButton:hover {
+  background-color: #d21717;
+  color: #fff;
+}
+
+.topRight {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
+  .cross {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    path {
+      stroke: #1223b9;
+    }
+  }
+
+  .cross:hover {
+    path {
+      stroke: #ff9340;
+    }
+  }
+}
+
+.imagesContainer {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  min-width: 630px;
+}
+
+.audiosContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pdfsContainer {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.filePickerBtn {
+  background-color: #fff;
+  border-bottom: 1px solid #1223b9;
+  font-size: 18px;
+  color: #1223b9;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  width: max-content;
+  cursor: pointer;
+}
+
+.inputHidden {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  line-height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.bottomContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.error {
+  text-align: center;
+  color: #d21717;
+}
+
+.select {
+  padding: 20px 40px;
+  font-size: 24px;
+  border-radius: 8px;
+  border: none;
+  outline: 1px solid #c1c1c1;
+  margin-bottom: 20px;
+}
+
+.infoIcon {
+  font-size: 30px;
+  // width: max-content;
+  display: block;
+  position: relative;
+  color: #1223b9;
+}
+
+.infoIcon:hover {
+  .infoBlock {
+    display: block;
+  }
+}
+
+.infoBlock {
+  display: none;
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  width: 100%;
+  background-color: #fff;
+  width: fit-content;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 8px;
+  outline: 1px solid #c1c1c1;
+  white-space: pre-line;
+  z-index: 100;
+  color: #000;
+}
+
+.infoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

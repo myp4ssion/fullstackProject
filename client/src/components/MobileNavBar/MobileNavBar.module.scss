@@ -1,0 +1,43 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media (max-height: 600px) {
+    gap: 10px;
+  }
+  @media (max-height: 440px) {
+    gap: 5px;
+  }
+}
+
+.navLink {
+  font-size: 39px;
+  width: max-content;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.1s ease-in-out;
+
+  @media (max-height: 600px) {
+    font-size: 27px;
+  }
+
+  @media (max-height: 440px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 420px) {
+    font-size: 35px;
+  }
+}
+
+.navLink:global(.active) {
+  color: #ff9340;
+  transform: scale(1.14);
+}
+
+@media (hover: hover) {
+  .navLink:hover {
+    color: #ff9340;
+    transform: scale(1.14);
+  }
+}

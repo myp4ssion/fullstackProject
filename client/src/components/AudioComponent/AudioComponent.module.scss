@@ -1,0 +1,22 @@
+.audioContainer {
+  position: relative;
+  width: fit-content;
+}
+
+.cross {
+  path {
+    stroke: red;
+  }
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.cross:hover {
+  transform: scale(1.4);
+  user-select: none;
+}
